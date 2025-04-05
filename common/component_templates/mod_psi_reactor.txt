@@ -1,0 +1,26 @@
+@small_power = 100
+
+@small_cost = 0.1
+
+utility_component_template = {
+	key = "PSI_SMALL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @small_power
+	resources = {
+		category = ship_components
+		cost = {
+			sr_zro = @small_cost
+		}
+	}
+
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { psi_corvette }
+	#upgrades_to = "CORVETTE_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 1
+	}
+}
