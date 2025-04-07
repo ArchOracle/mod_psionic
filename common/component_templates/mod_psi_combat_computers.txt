@@ -1,0 +1,25 @@
+utility_component_template = {
+	key = "COMBAT_COMPUTER_SWARM_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			sr_zro = 0
+		}
+	}
+	ship_behavior = "swarm"
+	is_default_component = yes
+
+	size_restriction = { psi_corvette }
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_SWARM_BASIC"
+	ai_tags = { gunship }
+	ai_tag_weight = 0
+
+	ai_weight = {
+		weight = 1
+	}
+}
